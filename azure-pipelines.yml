@@ -1,7 +1,4 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+#Demo spring application
 
 trigger:
 - main
@@ -11,10 +8,10 @@ pool:
 
 stages:
   -stage: 'Junit'
-   DisplayName:'Junit stage'
+   displayName:'Junit stage'
    jobs:
       -job:'JunitTest'
-      DisplayName:'running unit tests'
+      DisplayName:'Running unit tests'
       steps:
         -script:echo'Running spring demo app unit test'
           -task:Maven@3
