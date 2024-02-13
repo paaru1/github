@@ -11,10 +11,10 @@ pool:
 
 stages:
   -stage: 'Junit'
-   displayName: 'Junit stage'
+   DisplayName:'Junit stage'
    jobs:
       -job:'JunitTest'
-      displayName:'running unit tests'
+      DisplayName:'running unit tests'
       steps:
         -script: echo'Running spring demo app unit test'
           -task: Maven@3
