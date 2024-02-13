@@ -16,5 +16,5 @@ stages:
       -job:'JunitTest'
       DisplayName:'running unit tests'
       steps:
-        -script: echo'Running spring demo app unit test'
-          -task: Maven@3
+        -script:echo'Running spring demo app unit test'
+          -task:Maven@3
